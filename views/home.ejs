@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFlix</title>
+    <link rel="stylesheet" href="./CssForHome.css">
+    
+    <style>
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #0b0c10;
+        }
+
+        .top-bar .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: rgba(255, 0, 0, 0.66);
+            letter-spacing: 2px;
+        }
+
+        .top-bar .auth-links a {
+            margin-left: 20px;
+            padding: 8px 16px;
+            background-color:rgba(255, 0, 0, 0.66);
+            color: #0B0C10;
+            border-radius: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .top-bar .auth-links a:hover {
+            background-color: black;
+            color:rgba(255, 0, 0, 0.66);
+        }
+        .dropdown {
+      position: relative;
+    }
+
+    /* Dropdown content hidden by default */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      min-width: 150px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      flex-direction: column;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+      margin: 10px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Simple Top Bar with Logo and Login/Signup -->
+    <div class="top-bar">
+        <div class="logo">VEEPRO</div>
+        <div class="auth-links">
+        
+          <a href="/getAdminPage">Admin Login</a>
+         
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Stream anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input-group">
+                <a href="/getLogin">Get Started></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marquee Section -->
+    <div class="marquee-container">
+        <marquee behavior="alternate">
+            <img src="./Image/Jawan.jpg" alt="Jawan">
+            <img src="./Image/Bala.jpg" alt="Bala">
+            <img src="./Image/Pathaan.jpg" alt="Pathaan">
+            <img src="./Image/Spiderman.jpg" alt="Spiderman">
+            <img src="./Image/Munjya.jpg" alt="Munjya">
+            <img src="./Image/Stree2.jpg" alt="Stree2">
+            <img src="./Image/Chhaava.jpg" alt="Chhaava">
+            <img src="./Image/satya prem ki katha.jpg" alt="satya prem ki katha">
+        </marquee>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About ProFlix</h3>
+                <p>ProFlix (VEEPRO) is your entertainment companion — offering curated movies, TV shows, and more. Built by learners, for everyone who loves stories.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: support@veeproflix.com</p>
+                <p>Location: Pune, Maharashtra</p>
+            </div>
+            <div class="footer-bottom">
+                <p>Questions? Connect with us anytime.</p>
+                <small>&copy; 2025 ProFlix | Built for learning and fun</small>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

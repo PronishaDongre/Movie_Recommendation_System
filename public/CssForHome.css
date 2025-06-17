@@ -1,0 +1,320 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Image/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-group a
+{
+    background-color:rgba(255,0,0, 0.7);
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.login-btn {
+    padding: 12px 20px;
+    background-color: red;
+    color: rgba(255,0,0, 0.7);;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e50914;
+}
+
+.marquee-container {
+    background-color: #0B0C10;
+    padding: 20px;
+    overflow: hidden;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+.marquee-container marquee img {
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.marquee-container marquee img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Navigation bar (nav.ejs) style */
+nav {
+    background-color: #0B0C10;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+    letter-spacing: 2px;
+}
+
+nav .nav-buttons button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav .nav-buttons button:hover {
+    background-color: #ff1e1e;
+}
+.email-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    min-width: 280px;
+}
+
+.email-wrapper label {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.email-wrapper input {
+    color: black;
+    border: none;body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Image/back4.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-group input[type="email"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    font-size: 16px;
+}
+
+.login-btn {
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e50914;
+}
+
+.marquee-container {
+    background-color: #0B0C10;
+    padding: 20px;
+    overflow: hidden;
+    border-top: 2px solid #444;
+    border-bottom: 2px solid #444;
+}
+
+.marquee-container marquee img {
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.marquee-container marquee img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+    background-color: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+/* Navigation bar (nav.ejs) style */
+nav {
+    background-color: #0B0C10;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e50914;
+    letter-spacing: 2px;
+}
+
+nav .nav-buttons button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+nav .nav-buttons button:hover {
+    background-color: #ff1e1e;
+}
+.email-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #00ffcc;
+    border-radius: 6px;
+    min-width: 280px;
+}
+
+.email-wrapper label {
+    color: #ccc;
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+}
+
+.email-wrapper input {
+    color: black;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
+.mainLogin
+{
+    position: relative;
+    display: inline-block;
+}
+.loginDiv
+{
+    display: none;
+}
+.loginDiv a
+{
+    color:white
+}
+.mainLogin:hover .loginDiv
+{
+    background-color: #0B0C10;
+    display: block;
+}
+    font-size: 1rem;
+    font-weight: bold;
+    outline: none;
+}
