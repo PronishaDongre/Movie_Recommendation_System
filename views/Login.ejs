@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Movie Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: url("./Image/bg11.jpg") no-repeat center center/cover;
+      position: relative;
+      padding-right: 80px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .container {
+      width: 420px;
+      max-width: 100%;
+      background-color: white;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      border: 2px solid black;
+      padding: 20px 25px;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: black;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .inputCtrl {
+      margin-bottom: 14px;
+    }
+
+    .inputCtrl label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: black;
+    }
+
+    .inputCtrl input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid black;
+      border-radius: 8px;
+      background-color: rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+      color: black;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: black;
+    }
+
+    .message {
+      margin-top: 15px;
+      text-align: center;
+      color: black;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .register-link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 0.95rem;
+      color: black;
+    }
+
+    .register-link a {
+      color: black;
+      text-decoration: underline;
+      font-weight: 600;
+    }
+
+    .register-link a:hover {
+      color: #333;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        justify-content: center;
+        padding-right: 0;
+      }
+      .container {
+        width: 90%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form action="/checklogin" method="POST">
+      <div class="inputCtrl">
+        <label for="uname">Username:</label>
+        <input type="text" name="uname" id="uname" required>
+      </div>
+      <div class="inputCtrl">
+        <label for="upass">Password:</label>
+        <input type="password" name="upass" id="upass" required>
+      </div>
+      <input type="submit" value="Login">
+    </form>
+    
+    <div class="register-link">
+      Don't have an account? <a href="/register">Register here</a>
+    </div>
+  </div>
+</body>
+</html>

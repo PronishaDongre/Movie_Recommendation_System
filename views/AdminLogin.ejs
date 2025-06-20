@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background: url("./Image/bg11.jpg") no-repeat center center/cover;
+      position: relative;
+      padding-right: 80px;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    .container {
+      width: 420px;
+      max-width: 100%;
+      background-color: white;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      border: 2px solid black;
+      padding: 40px 30px;
+      position: relative;
+    }
+
+    h2 {
+      font-size: 26px;
+      color: black;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      padding: 12px;
+      border: 1px solid black;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.2);
+      font-size: 15px;
+      color: black;
+    }
+
+    input::placeholder {
+      color: black;
+      opacity: 0.6;
+    }
+
+    input[type="submit"] {
+      padding: 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #222;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        justify-content: center;
+        padding-right: 0;
+      }
+
+      .container {
+        width: 90%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <div class="container">
+    <h2>Admin Login</h2>
+    <form action="/checkAdmin" method="post">
+      <input type="text" placeholder="Enter Username" name="aname" required>
+      <input type="password" placeholder="Enter Password" name="apass" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+</body>
+</html>
